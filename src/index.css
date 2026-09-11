@@ -1,2 +1,32 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+/* 1. Global Theme Configuration (Change these to change the entire UI) */
+:root {
+  --theme-orange: #FF5722;
+  --theme-pink: #D81B7E;
+  --theme-violet: #9a70e2;
+}
+
+/* 2. Manual Utility Background Class */
+.bg-theme-gradient {
+  background-image: linear-gradient(
+    to right, 
+    var(--theme-orange), 
+    var(--theme-pink), 
+    var(--theme-violet)
+  );
+}
+
+/* 3. Manual Utility Text Gradient Class */
+.text-theme-gradient {
+  background-image: linear-gradient(
+    to right, 
+    var(--theme-orange), 
+    var(--theme-pink), 
+    var(--theme-violet)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
