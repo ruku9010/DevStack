@@ -1,8 +1,8 @@
 
 
-import type { Technology } from "../types/Types";
+import type { Technology } from "./types/Types";
 import { Suspense } from "react";
-import Technologies from "./Technologies";
+import Technologies from "./Technology/Technologies";
 
 
 

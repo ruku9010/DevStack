@@ -1,5 +1,5 @@
 
-import { useState, type Dispatch, type SetStateAction } from "react";
+import { type Dispatch, type SetStateAction } from "react";
 import type { Technology } from "../types/Types";
 import { FaStar } from "react-icons/fa";
 import { toast } from "react-toastify";
@@ -18,17 +18,20 @@ interface TechnologiesCardProps {
   tech: Technology;
   selectedTechs: Technology[];
   setSelectedTechs: Dispatch<SetStateAction<Technology[]>>;
+  isadded: boolean;
+  setIsAdded: Dispatch<SetStateAction<boolean>>;
 }
 
-const AvailableTechs = ({ tech, selectedTechs, setSelectedTechs }: TechnologiesCardProps) => {
-  const [isadded, setIsAdded] = useState(false);
+const AvailableTechs = ({ tech, selectedTechs, setSelectedTechs, isadded, setIsAdded }: TechnologiesCardProps) => {
+  // const [isadded, setIsAdded] = useState(false);
 
   const handleAddToStack = () => {
-    setIsAdded(true);
-    if (!isadded) {
+    setIsAdded(false);
+    if (isadded || !selectedTechs.some((selectedTech) => selectedTech.id === tech.id)) {
       toast.success(`${tech.name} has been added to your stack!`);
-    } else {
-      toast.error(`${tech.name} is already in your stack!`);
+
+    } else  {
+      toast.warning(`${tech.name} is already in your stack!`);
     }
     setSelectedTechs([...selectedTechs, tech]);
   };
@@ -81,9 +84,10 @@ const AvailableTechs = ({ tech, selectedTechs, setSelectedTechs }: TechnologiesC
           {/* Action Button */}
           <button className=" btn btn-neutral w-full rounded-xl border-0 transition-all duration-300 group-hover:scale-[1.02] "
             onClick={handleAddToStack}
-            disabled={isadded}
+            // disabled={isadded}
           >
-            {`${isadded ? "Added" : "Add to Stack"}`}
+            {/* {`${isadded ? "Added" : "Add to Stack"}`} */}
+            Add to Stack
           </button>
        
     </>
