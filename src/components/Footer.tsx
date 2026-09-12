@@ -4,8 +4,8 @@ const Footer = () => {
   return (
     <>
       <div className="divider"></div>
-      <div className="grid grid-cols-1 w-[95%] mx-auto md:grid-cols-4 gap-8 textDesign p-10">
-        <div>
+      <div className="md:grid grid-cols-1 w-[95%] mx-auto md:grid-cols-4 gap-8 textDesign p-10">
+        <div className="flex items-center flex-col md:items-start text-center md:text-left">
           <img src={footer} alt="Footer" />
           <p className="textDesign text-sm leading-6 mt-2 line-clamp-2">
             Curated tools, technologies, and resources for developers building
@@ -19,7 +19,7 @@ const Footer = () => {
             <a href="https://www.linkedin.com/in/ruku-sarker/">LinkedIn</a>
           </div>
         </div>
-        <div>
+        <div className="hidden md:block">
           <h3 className="font-semibold text-black">PRODUCT</h3>
           <div className="flex flex-col gap-2 mt-4">
             <a href="">Home</a>
@@ -27,7 +27,7 @@ const Footer = () => {
             <a href="">Projects</a>
           </div>
         </div>
-        <div>
+        <div className="hidden md:block">
           <h3 className="font-semibold text-black">COMPANY</h3>
           <div className="flex flex-col gap-2 mt-4">
             <a href="">About</a>
@@ -35,7 +35,7 @@ const Footer = () => {
             <a href="">Career</a>
           </div>
         </div>
-        <div>
+        <div className="hidden md:block">
           <h3 className="font-semibold text-black">LEGAL</h3>
           <div className="flex flex-col gap-2 mt-4">
             <a href="">Privacy Policy</a>
@@ -43,9 +43,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col w-[95%] mx-auto md:flex-row items-center justify-between mt-8 border-t border-gray-200 pt-4 textDesign p-10">
-        <span>© 2023 DevStack. All rights reserved.</span>
-        <div className="flex items-center gap-4 mt-2 md:mt-0">
+      <div className="text-center md:text-center lg:flex flex-col w-[95%] mx-auto md:flex-row items-center justify-between mt-8 border-t border-gray-200 pt-4 textDesign p-10">
+        <span>© 2026 DevStack. All rights reserved.</span>
+        <div className="flex justify-center md:flex items-center gap-4 mt-2 md:mt-0">
           <a href="">Privacy</a>
           <a href="">Terms</a>
         </div>

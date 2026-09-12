@@ -7,8 +7,6 @@ interface SelectedTechsCardProps {
   tech: Technology;
   selectedTechs: Technology[];
   setSelectedTechs: Dispatch<SetStateAction<Technology[]>>;
-    isadded: boolean;
-    setIsAdded: Dispatch<SetStateAction<boolean>>;
 }
 
 const SelectedTechsCard = ({

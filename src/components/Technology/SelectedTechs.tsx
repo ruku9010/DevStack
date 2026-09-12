@@ -7,16 +7,12 @@ interface TechnologiesSelectedProps {
   techlist: Technology[];
   selectedTechs: Technology[];
   setSelectedTechs: Dispatch<SetStateAction<Technology[]>>;
-  isadded: boolean;
-  setIsAdded: Dispatch<SetStateAction<boolean>>;
 }
 
 const SelectedTechs = ({
   techlist,
   selectedTechs,
   setSelectedTechs,
-  isadded,
-  setIsAdded,
 }: TechnologiesSelectedProps) => {
 
   const handleDeleteAll = () => {
@@ -55,8 +51,6 @@ const SelectedTechs = ({
                     tech={tech}
                     selectedTechs={selectedTechs}
                     setSelectedTechs={setSelectedTechs}
-                    isadded={isadded}
-                    setIsAdded={setIsAdded}
                   />
                 ))}
               <button
