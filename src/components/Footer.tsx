@@ -43,7 +43,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="text-center md:text-center lg:flex flex-col w-[90%] mx-auto md:flex-row items-center justify-between mt-8 border-t border-gray-200 pt-4 textDesign text-sm">
+      <div className="text-center mb-4 md:text-center lg:flex flex-col w-[90%] mx-auto md:flex-row items-center justify-between mt-8 border-t border-gray-200 pt-4 textDesign text-sm">
         <span>© 2026 DevStack. All rights reserved.</span>
         <div className="flex justify-center md:flex items-center gap-4 mt-2 md:mt-0">
           <a href="">Privacy</a>

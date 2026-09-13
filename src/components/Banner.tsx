@@ -2,7 +2,7 @@ import bannerImage from "/src/assets/banner-stack.png";
 const Banner = () => {
   return (
     <>
-      <div className=" md:flex justify-between items-center w-[85%] mx-auto">
+      <div className="mt-10 md:flex justify-between items-center w-[85%] mx-auto">
         <div className="space-y-5 text-center md:text-left">
           <h1 className="text-4xl font-bold mt-3">
             Build Your Ideal <br></br>
@@ -11,9 +11,8 @@ const Banner = () => {
             </span>
           </h1>
           <p className="textDesign">
-            Explore frontend, backend, database, and tooling options,<br></br>{" "}
-            compare them side by side, and put together the stack that fits your{" "}
-            <br></br>next project.
+            Explore frontend, backend, database, and tooling options,
+            compare them side by side, and put together the stack that fits your next project.
           </p>
           <div className="mt-20 w-full md:w-[350px]">
             <div className="flex items-center justify-center lg:justify-start gap-3">

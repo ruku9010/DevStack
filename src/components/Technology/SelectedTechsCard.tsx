@@ -46,7 +46,7 @@ const SelectedTechsCard = ({
       
 
       <button onClick={handleRemoveTech}>
-        <ImCross className=""/>
+        <ImCross />
       </button>
     </div>
    
