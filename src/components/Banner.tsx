@@ -16,7 +16,7 @@ const Banner = () => {
             <br></br>next project.
           </p>
           <div className="mt-20 w-full md:w-[350px]">
-            <div className="flex items-center justify-center md:justify-start gap-3">
+            <div className="flex items-center justify-center lg:justify-start gap-3">
               <button className="flex-1 btn text-gray-100 rounded-lg bg-theme-gradient">
                 Explore Technologies
               </button>

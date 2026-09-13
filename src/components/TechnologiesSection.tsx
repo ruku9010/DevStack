@@ -24,7 +24,7 @@ const TechnologiesSection = () => {
       </div>
 
       <div></div>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div className="ml-[7.5%]">Loading...</div>}>
         <Technologies techs={techs} />
       </Suspense>
     </>

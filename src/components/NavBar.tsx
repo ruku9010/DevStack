@@ -2,12 +2,12 @@ import logo from "/src/assets/logo-text.png";
 
 const NavBar = () => {
   return (
-    <div>
-      <div className="flex justify-between items-center w-[85%] mx-auto my-5">
+    <div className="sticky top-0 z-50 bg-white">
+      <div className="flex justify-between items-center w-[85%] mx-auto pt-5">
         {/* hamburger icon */}
-        <div className="swap swap-rotate md:hidden">
+        <div className="swap swap-rotate lg:hidden">
           <svg
-            className=" swap-off fill-current"
+            className=" swap-off fill-current text-black"
             xmlns="http://www.w3.org/2000/svg"
             width="32"
             height="32"
@@ -19,7 +19,7 @@ const NavBar = () => {
 
         <img src={logo} alt="DevStack-logo" />
 
-        <ul className=" hidden sm:hidden  md:flex gap-4 items-center">
+        <ul className=" hidden sm:hidden  lg:flex gap-4 items-center">
           <li>
             <a href="#">Home</a>
           </li>
@@ -38,12 +38,13 @@ const NavBar = () => {
         </ul>
 
         <div>
-          <button className="mr-5 cursor-pointer">Sign In</button>
-          <button className="btn btn-active btn-sm btn-secondary rounded-2xl">
+          <button className="text-gray-600 font-semibold mr-5 lg:mr-5 cursor-pointer">Sign In</button>
+          <button className="btn btn-active btn-sm btn-secondary font-semibold rounded-2xl">
             Sign Up
           </button>
         </div>
       </div>
+       <div className="divider"></div>
     </div>
   );
 };

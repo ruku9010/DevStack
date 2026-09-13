@@ -128,7 +128,7 @@ const AvailableTechs = ({
         {selectedTechs.some(
           (selectedTech) => selectedTech.id === tech.id
         )
-          ? "Added to Stack"
+          ? "✓ Added to Stack"
           : "Add to Stack"}
       </button>
     </div>
